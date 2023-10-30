@@ -9,7 +9,7 @@ public class RemoveElement {
     public static int removeElement(int[] nums, int val) {
         int count = 0;
         int x = 0;
-
+        //Алгоритм Бойеса-Мура "о большинстве голосовавших"
         while (x < nums.length) {
             if (nums[count++] != val) {
                 nums[count++] = nums[count - 1];
